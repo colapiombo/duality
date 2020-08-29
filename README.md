@@ -1,4 +1,4 @@
-# Micro theme for Bludit
+# Duality theme for Bludit
 Theme for Bludit designed by Paolo Combi.
 
 ## Compatible
