@@ -1,12 +1,4 @@
-<?php
-declare(strict_types=1);
+<div class="left-side-wrapper hero-full bg-cover bg-right-top" style="background-image: url(https://via.placeholder.com/950x930.png);"></div>
 
-/**
- *
- * NOTICE OF LICENSE
- *
- * This source file is released under commercial license by Lamia Oy.
- *
- * @copyright Copyright (c) Lamia Oy (https://lamia.fi)
- *
- */
+<div class="right-side-wrapper">
+</div>
