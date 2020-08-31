@@ -9,19 +9,25 @@ body {
     margin: 0 auto;
 }
 
+.main {
+    max-width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 h1 {
     margin-bottom: 1vh;
 }
-
 
 
 a {
     color: var(--primary-color);
     text-decoration: none;
     border-bottom: 3px solid transparent;
-&:hover, &:focus {
-              border-bottom: 3px solid currentColor;
-          }
+    &:hover, &:focus {
+      border-bottom: 3px solid currentColor;
+    }
 }
 
 section {
@@ -40,7 +46,9 @@ section {
 nav {
     display: flex;
     justify-content: flex-end;
-    padding: 20px 0;
+    margin: 0 auto;
+    padding: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
     background-color: var(--bg-color);
     color: var(--font-color);
 }
@@ -88,16 +96,14 @@ nav {
 .navbar-toggler{
     background-color: var(--bg-color);
     color: var(--font-color);
-    border-color: var(--font-color);
-
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(41,41,34, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: var(--bg-color);
+    border-color: rgb(255,102,203);
 }
 
 input:checked + .slider {
@@ -117,18 +123,21 @@ input:checked + .slider:before {
 }
 
 
+.left-side-wrapper{
+    background-image: var(--homeimage);
+    width: 100%;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-size: 110% auto;
+    background-position: 50% 50%;
+    position: relative;
+    padding-bottom: 60%;
 
-
-/*-----------------------------------------------------------
-    Home Page
--------------------------------------------------------------*/
-.left-side-wrapper {position: fixed; width: 50%; }
-.right-side-wrapper {position: relative; width: 50%; float: right; }
-.hero-full {height: 100vh;}
-.hero-full-large {height: 100vh;}
-.bg-cover {background-size: cover; }
-.bg-contain {background-size: contain; }
-.bg-right-top {background-position: top right; }
+}
+.right-side-wrapper {
+    position: relative;
+    width: 100%;
+}
 
 /*-----------------------------------------------------------
 Navigation
@@ -138,31 +147,26 @@ Navigation
 
 a.title-brand {
     display: block;
-    background-color: var(--bg-color);
     border: none;
-    text-align: center;
     transition: none;
 }
 
 a.title-brand:hover {
-    border-color: var(--font-color);}
+    border-color: var(--font-color);
+}
 
 a.title-brand h1 {
     display: block;
     margin: 0;
-    font-family: Montserrat, Verdana, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.9rem;
-    line-height: 1.7;
-    color: var(--font-color);
-    white-space: nowrap;
 }
 
 a.title-brand {
     padding: 0.75rem 2rem 0.9rem;
 }
-/* Large viewport rearrange */
+
+/*-----------------------------------------------------------
+Large viewport rearrange
+-------------------------------------------------------------*/
 
 @media (min-width: 1000px) {
     a.title-brand {
@@ -175,7 +179,36 @@ a.title-brand {
         width: 12rem;
         z-index: 4;
     }
-    .navbar-nav{
-        padding-left: 3rem;
+    .main {
+        max-width: calc(100%-3rem);
+        border: none;
+        padding: 0;
+        margin-left: 3rem;
+    }
+    nav {
+        padding: 0.8rem 2rem 1.25rem;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .left-side-wrapper {
+        position: fixed;
+        width: 50%;
+    }
+    .right-side-wrapper {
+        position: relative;
+        width: 50%;
+        float: right;
+    }
+
+    .left-side-wrapper{
+        background-image: var(--homeimage);
+        position: fixed;
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 100vh;
+    }
+    .right-side-wrapper {
+        position: relative;
+        width: 50%;
+        float: right;
     }
 }

@@ -24,6 +24,7 @@
 <!-- Include CSS Styles from this theme -->
 <?php echo Theme::cssBootstrap(); ?>
 <?php echo Theme::css('css/normalize.css'); ?>
+<?php echo Theme::css('css/transition.css'); ?>
 <?php echo Theme::css('css/main.css'); ?>
 <?php echo Theme::css('css/type.css'); ?>
 
