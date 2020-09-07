@@ -13,7 +13,7 @@
 <?php echo Theme::metaTags('description'); ?>
 
 <!-- Include Favicon -->
-<?php echo Theme::favicon('img/favicon.png'); ?>
+<?php echo Theme::favicon('assets/img/favicon.png'); ?>
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
@@ -23,11 +23,7 @@
 
 <!-- Include CSS Styles from this theme -->
 <?php echo Theme::cssBootstrap(); ?>
-<?php echo Theme::css('css/normalize.css'); ?>
-<?php echo Theme::css('css/transition.css'); ?>
-<?php echo Theme::css('css/main.css'); ?>
-<?php echo Theme::css('css/type.css'); ?>
-
+<?php echo Theme::css('assets/css/main.css'); ?>
 
 <!-- if using Internet Explorer less than version 9 (IE8 and lower), do this... -->
 
