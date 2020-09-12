@@ -8,6 +8,12 @@
             <h2>Future Imperfect</h2>
             <p>Another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
         </header>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
     </section>
 
     <!-- Mini Posts -->
