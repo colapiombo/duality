@@ -1,0 +1,70 @@
+
+/**
+ * palette.scss
+ * version: 1.0
+ * Author: Colapiombo
+ * Licensed under the CCA 3.0 license - https://creativecommons.org/licenses/by/3.0/
+ * Copyright (c) 2020 Paolo Combi
+ */
+
+
+
+$color-white: #ffffff;
+$color-gray: #f4f4f4;
+$color-gray-1: #aaaaaa;
+$color-gray-2: #646464;
+$color-gray-3: #3c3b3b;
+
+$color-gray-opacity: rgba(160,160,160,0.075);
+$color-gray-opacity-1: rgba(160,160,160,0.3);
+$color-gray-opacity-2: rgba(160,160,160,0.65);
+
+$color-blue-green: #2ebaae;
+
+$color-gray-light: rgba($color-white, 0.3);
+$color-gray-light-bg: rgba($color-white, 0.075);
+$color-gray-light-alt: rgba($color-white, 0.65);
+
+$color-black: rgb(0,0,0);
+$color-gray-dark: rgba($color-black, 0.3);
+$color-gray-dark-bg: rgba($color-black, 0.075);
+$color-gray-dark-alt: rgba($color-black, 0.65);
+
+
+:root {
+  --bg: #{$color-white};
+  --bg-alt: #{$color-gray};
+  --fg: #{$color-gray-3};
+  --fg-bold: #{$color-gray-2};
+  --fg-light: #{$color-gray-1};
+  --border: #{$color-gray-opacity-1};
+  --border-alt: #{$color-gray-opacity};
+  --border-bg: #{$color-gray-opacity-2};
+  --accent: #{$color-blue-green};
+}
+
+.dark {
+  --bg: #{$color-black};
+  --bg-alt: #{$color-gray-dark};
+  --fg: #{$color-gray-light};
+  --fg-bold: #{$color-gray-light-bg};
+  --fg-light: #{$color-gray-light-alt};
+  --border: #{$color-gray-dark};
+  --border-alt: #{$color-gray-dark-bg};
+  --border-bg: #{$color-gray-dark-alt};
+  --accent: #{$color-black};
+
+}
+
+// Palette.
+$palette: (
+        bg:							var(--bg),
+        bg-alt:						var(--bg-alt),
+        fg:							var(--fg),
+        fg-bold:					var(--fg-bold),
+        fg-light:					var(--fg-light),
+        border:						var(--border),
+        border-bg:					var(--border-bg),
+        border-alt:					var(--border-alt),
+        accent:						var(--accent)
+);

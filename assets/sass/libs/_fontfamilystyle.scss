@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900');
+
+// Font.
+$font: (
+        family:						('Source Sans Pro', Helvetica, sans-serif),
+        family-fixed:				('Courier New', monospace),
+        family-heading:				('Raleway', Helvetica, sans-serif),
+        weight:						400,
+        weight-bold:				700,
+        weight-heading:				400,
+        weight-heading-bold:		800,
+        weight-heading-extrabold:	900,
+        kerning-heading:			0.25em
+);
+
