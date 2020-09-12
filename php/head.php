@@ -22,7 +22,6 @@
 <script src="https://kit.fontawesome.com/c820cdac55.js" crossorigin="anonymous"></script>
 
 <!-- Include CSS Styles from this theme -->
-<?php echo Theme::cssBootstrap(); ?>
 <?php echo Theme::css('assets/css/main.css'); ?>
 
 <!-- if using Internet Explorer less than version 9 (IE8 and lower), do this... -->

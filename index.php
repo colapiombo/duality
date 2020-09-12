@@ -34,7 +34,6 @@
 echo Theme::jquery();
 
 // Include javascript Bootstrap file from Bludit Core
-echo Theme::jsBootstrap();
 echo Theme::js('assets/js/jquery.min.js');
 echo Theme::js('assets/js/browser.min.js');
 echo Theme::js('assets/js/breakpoints.min.js');
