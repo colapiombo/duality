@@ -1,16 +1,19 @@
-
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 // Font.
 $font: (
-        family:						('Source Sans Pro', Helvetica, sans-serif),
-        family-fixed:				('Courier New', monospace),
-        family-heading:				('Raleway', Helvetica, sans-serif),
+        family:						('Overpass',Helvetica, sans-serif),
+        family-fixed:				('Dosis', sans-serif),
+        family-heading:				('Chivo', sans-serif),
+        family-slogan:				('Caveat', cursive),
         weight:						400,
         weight-bold:				700,
         weight-heading:				400,
-        weight-heading-bold:		800,
+        weight-heading-bold:		700,
         weight-heading-extrabold:	900,
-        kerning-heading:			0.25em
+        kerning-heading:			normal
 );
 

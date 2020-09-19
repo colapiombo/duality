@@ -42,7 +42,7 @@
 		h1 {
 			height: inherit;
 			line-height: inherit;
-			padding: 0 0 0 1.5em;
+			padding: 0em;
 			white-space: nowrap;
 
 			a {
@@ -50,12 +50,13 @@
 			}
 		}
 
+
 		.links {
 			@include vendor('flex', '1');
 			border-left: solid 1px _palette(border);
 			height: inherit;
 			line-height: inherit;
-			margin-left: 1.5em;
+            margin-left: 4.5rem;
 			overflow: hidden;
 			padding-left: 1.5em;
 
@@ -95,7 +96,8 @@
 
 				li {
 					border-left: solid 1px _palette(border);
-					height: inherit;
+                    border-bottom: solid 1px _palette(border);
+                  height: inherit;
 					line-height: inherit;
 					white-space: nowrap;
 
@@ -110,8 +112,8 @@
 						color: _palette(fg-light);
 						overflow: hidden;
 						position: relative;
-						text-indent: 4em;
-						width: 4em;
+						text-indent: 4.5em;
+						width: 4.5em;
 
 						&:before {
 							display: block;
@@ -160,11 +162,7 @@
 			}
 		}
 
-		@include breakpoint('<=medium') {
-			.links {
-				display: none;
-			}
-		}
+
 
 		@include breakpoint('<=small') {
 			height: 2.75em;
@@ -179,5 +177,104 @@
 					display: none;
 				}
 			}
+
 		}
+
+
+        .header-title {
+          justify-content: flex-start;
+          transform: rotateZ(90deg);
+          transform-origin: bottom left;
+          position: fixed;
+          transition: none;
+          left: 0;
+          display: flex;
+          top: -4.5rem;
+          z-index: 4;
+          padding: 0rem;
+          height: 4.5rem;
+          width: 15rem;
+        }
+
+        .title-website:hover {
+          background-color: _palette(bg-alt);
+        }
+
+        .title-website{
+          height: 100%;
+          background-color: _palette(border-alt);
+          color: _palette(--bg);
+          text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding:  0rem 1.5rem;
+
+        }
+
+        .slogan{
+          width: calc(100vw);
+          height: 100%;
+          font-family: _font(family-slogan);
+          background-color: _palette(--fg);
+          color: _palette(--bg);
+          font-size: 0.6em;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding-left:  1.5rem;
+        }
+
+		@include breakpoint('<=large'){
+          .header-title {
+            border: none;
+            justify-content: center;
+            align-items: center;
+            transform: none;
+            left: auto;
+            top: auto;
+            width: auto;
+            height: auto;
+          }
+
+			.links {
+              margin: auto;
+              padding-top: 3.5rem;
+			}
+
+
+			.title-website{
+				display: block;
+			}
+
+			.slogan{
+              width: auto;
+              display: block;
+
+			}
+        }
+
+      @include breakpoint('<=medium') {
+        .links {
+          display: none;
+        }
+        .header-title{
+          display: none;
+        }
+        .main{
+          width: 100%;
+        }
+      }
 	}
+
+    @include breakpoint('<=large'){
+      #header{
+        height: auto;
+      }
+    }
+
+    @include breakpoint('<=medium'){
+      #header{
+        height: 3.5rem;
+      }
+    }

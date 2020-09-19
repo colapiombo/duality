@@ -38,11 +38,11 @@
                             <?php echo $lastPages->date(); ?> <?php echo $lastPages->readingTime(); ?>
                         </time>
                         <a href="#" class="author">
-                            <img src="<?= ($lastPages->user('profilePicture') ? $lastPages->user('profilePicture') : Theme::src('img/noimage.png')) ?>" alt=""/>
+                            <img src="<?= ($lastPages->user('profilePicture') ? $lastPages->user('profilePicture') : Theme::src('assets/img/favicon-32x32.png')) ?>" alt=""/>
                         </a>
                     </header>
                     <a href="<?= $lastPages->permalink(); ?>" class="image">
-                        <img src="<?= ($lastPages->coverImage() ? $lastPages->coverImage() : Theme::src('img/noimage.png')) ?>" alt=""/>
+                        <img src="<?= ($lastPages->coverImage() ? $lastPages->coverImage() : '') ?>" alt=""/>
                     </a>
                 </article>
             <?php endforeach ?>

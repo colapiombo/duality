@@ -26,13 +26,13 @@
                         <span class="name">
                             <?= $page->user('nickname'); ?>
                         </span>
-                        <img src="<?= ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/noimage.png')) ?>"
+                        <img src="<?= ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('assets/img/favicon-32x32.png')) ?>"
                              alt="Author"/></a>
                 </div>
             </header>
 
             <a href="<?= $page->permalink(); ?>" class="image featured">
-                <img src="<?= ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimage.png')) ?>" alt=""/>
+                <img src="<?= ($page->coverImage() ? $page->coverImage() : '') ?>" alt=""/>
             </a>
             <?= $page->contentBreak(); ?>
 

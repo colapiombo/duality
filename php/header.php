@@ -1,6 +1,13 @@
 <!-- Header -->
 <header id="header">
-    <h1><a href="<?= Theme::siteUrl() ?>"><?= $site->title() ?></a></h1>
+    <h1 class="header-title" >
+        <a href="<?= Theme::siteUrl() ?>" class="title-website">
+            <?= $site->title() ?>
+        </a>
+        <div class="slogan" >
+            <?= $site->slogan() ?>
+        </div>
+    </h1>
     <nav class="links">
         <ul>
             <?php foreach ($staticContent as $staticPage): ?>
