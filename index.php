@@ -3,7 +3,7 @@
 <head>
     <?php include(THEME_DIR_PHP . 'head.php'); ?>
 </head>
-<body class="is-preload">
+<body class="is-preload <?= ($WHERE_AM_I == 'page' ? 'single': '') ?>">
 
 <!-- Wrapper -->
 <div id="wrapper">
@@ -19,11 +19,10 @@
         include(THEME_DIR_PHP . 'page.php');
     } elseif (($WHERE_AM_I == 'home')) {
         include(THEME_DIR_PHP . 'home.php');
+       include(THEME_DIR_PHP . 'sidebar.php');
     }
     ?>
-    <?php include(THEME_DIR_PHP . 'sidebar.php'); ?>
 
-    <?php include(THEME_DIR_PHP . 'footer.php'); ?>
 </div>
 
 </body>

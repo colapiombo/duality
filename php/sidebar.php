@@ -69,25 +69,7 @@
     </section>
 
 
-    <!-- Footer -->
-    <section id="footer">
-        <!-- Social Networks -->
-        <ul class="icons">
-            <?php foreach (Theme::socialNetworks() as $key => $label): ?>
-                <li>
-                    <a href="<?= $site->{$key}(); ?>" class="icon brands fa-<?= $key ?>" target="_blank">
-                        <span class="label">
-                            <?= $key ?>
-                        </span>
-                    </a>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-        <p class="copyright">
-            &copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.
-        </p>
-
-    </section>
+    <?php         include(THEME_DIR_PHP . 'footer.php');  ?>
 
 </section>
 
