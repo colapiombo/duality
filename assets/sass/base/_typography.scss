@@ -81,6 +81,7 @@
 		letter-spacing: _font(kerning-heading);
 		line-height: 1.65;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		text-transform: uppercase;
 		a {
 			color: inherit;
 			border-bottom: 0;
