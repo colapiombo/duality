@@ -1,0 +1,285 @@
+/**
+* @author:	 							html5up.net | @ajlkn
+* 		Wonderfully changed:			Colapiombo
+* @copyright:							Copyright (c) Future Imperfect by HTML5 UP. (https://html5up.net/)
+* @copyright:							Copyright (c) 2020 Paolo Combi. (https://combi.li/)
+* Licensed under the CCA 3.0 license:	https://creativecommons.org/licenses/by/3.0/
+* Licensed under HTML5 UP:				https://html5up.net/license/
+*
+*/
+
+/* Header */
+
+	body {
+		padding-top: 3.5em;
+	}
+
+	#header {
+		@include vendor('display', 'flex');
+		@include vendor('justify-content', 'space-between');
+		background-color: _palette(bg);
+		border-bottom: solid 1px _palette(border);
+		height: 3.5em;
+		left: 0;
+		line-height: 3.5em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: _misc(z-index-base);
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+
+			li {
+				display: inline-block;
+				padding-left: 0;
+			}
+		}
+
+		h1 {
+			height: inherit;
+			line-height: inherit;
+			padding: 0em;
+			white-space: nowrap;
+
+			a {
+				font-size: 0.7em;
+			}
+		}
+
+
+		.links {
+			@include vendor('flex', '1');
+			border-left: solid 1px _palette(border);
+			height: inherit;
+			line-height: inherit;
+            margin-left: 4.5rem;
+			overflow: hidden;
+			padding-left: 1.5em;
+
+			ul {
+				li {
+					border-left: solid 1px _palette(border);
+					line-height: 1;
+					margin-left: 1em;
+					padding-left: 1em;
+
+					&:first-child {
+						border-left: 0;
+						margin-left: 0;
+						padding-left: 0;
+					}
+
+					a {
+						border-bottom: 0;
+						font-family: _font(family-heading);
+						font-size: 0.7em;
+						font-weight: _font(weight-heading);
+						letter-spacing: _font(kerning-heading);
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+		.main {
+			height: inherit;
+			line-height: inherit;
+			text-align: right;
+
+			ul {
+				height: inherit;
+				line-height: inherit;
+
+				li {
+					border-left: solid 1px _palette(border);
+                    border-bottom: solid 1px _palette(border);
+                  height: inherit;
+					line-height: inherit;
+					white-space: nowrap;
+
+					> * {
+						display: block;
+						float: left;
+					}
+
+					> a {
+						@include icon(false, solid);
+						border-bottom: 0;
+						color: _palette(fg-light);
+						overflow: hidden;
+						position: relative;
+						text-indent: 4.5em;
+						width: 4.5em;
+
+						&:before {
+							display: block;
+							height: inherit;
+							left: 0;
+							line-height: inherit;
+							position: absolute;
+							text-align: center;
+							text-indent: 0;
+							top: 0;
+							width: inherit;
+						}
+					}
+				}
+			}
+		}
+
+		form {
+			margin: 0;
+
+			input {
+				display: inline-block;
+				height: 2.5em;
+				position: relative;
+				top: -2px;
+				vertical-align: middle;
+			}
+		}
+
+		#search {
+			@include vendor('transition', 'all 0.5s ease');
+			max-width: 0;
+			opacity: 0;
+			overflow: hidden;
+			padding: 0;
+			white-space: nowrap;
+
+			input {
+				width: 12em;
+			}
+
+			&.visible {
+				max-width: 12.5em;
+				opacity: 1;
+				padding: 0 0.5em 0 0;
+			}
+		}
+
+
+
+		@include breakpoint('<=small') {
+			height: 2.75em;
+			line-height: 2.75em;
+
+			h1 {
+				padding: 0 0 0 1em;
+			}
+
+			.main {
+				.search {
+					display: none;
+				}
+			}
+
+		}
+
+
+        .header-title {
+          justify-content: flex-start;
+          transform: rotateZ(90deg);
+          transform-origin: bottom left;
+          position: fixed;
+          transition: none;
+          left: 0;
+          display: flex;
+          top: -4.5rem;
+          z-index: 4;
+          padding: 0rem;
+          height: 4.5rem;
+          width: 15rem;
+        }
+
+        .title-website:hover {
+          background-color: _palette(bg-alt);
+        }
+
+        .title-website{
+          height: 100%;
+          background-color: _palette(border-alt);
+          color: _palette(--bg);
+          text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding:  0rem 1.5rem;
+
+        }
+
+        .slogan{
+          width: calc(100vw);
+          height: 100%;
+          font-family: _font(family-slogan);
+          background-color: _palette(--fg);
+          color: _palette(--bg);
+          font-size: 0.6em;
+          display: flex;
+			text-transform:none;
+			justify-content: flex-start;
+          align-items: center;
+          padding-left:  1.5rem;
+        }
+
+		@include breakpoint('<=large'){
+          .header-title {
+            border: none;
+            justify-content: center;
+            align-items: center;
+            transform: none;
+            left: auto;
+            top: auto;
+            width: auto;
+            height: auto;
+          }
+
+			.links {
+              margin: auto;
+              padding-top: 3.5rem;
+			}
+
+
+			.title-website{
+				display: block;
+			}
+
+			.slogan{
+              width: auto;
+              display: block;
+
+			}
+        }
+
+      @include breakpoint('<=medium') {
+        .links {
+          display: none;
+        }
+        .header-title{
+          display: none;
+        }
+        .main{
+          width: 100%;
+        }
+      }
+	}
+
+    @include breakpoint('<=large'){
+      #header{
+        height: auto;
+      }
+    }
+
+    @include breakpoint('<=medium'){
+      #header{
+        height: 3.5rem;
+      }
+    }

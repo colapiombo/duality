@@ -1,0 +1,46 @@
+/**
+* @author:	 							html5up.net | @ajlkn
+* 		Wonderfully changed:			Colapiombo
+* @copyright:							Copyright (c) Future Imperfect by HTML5 UP. (https://html5up.net/)
+* @copyright:							Copyright (c) 2020 Paolo Combi. (https://combi.li/)
+* Licensed under the CCA 3.0 license:	https://creativecommons.org/licenses/by/3.0/
+* Licensed under HTML5 UP:				https://html5up.net/license/
+*
+*/
+
+/* Icon */
+
+	.icon {
+		@include icon;
+		border-bottom: none;
+		position: relative;
+
+		> .label {
+			display: none;
+		}
+
+		&:before {
+			line-height: inherit;
+		}
+
+		&.solid {
+			&:before {
+				font-weight: 900;
+			}
+		}
+
+		&.brands {
+			&:before {
+				font-family: 'Font Awesome 5 Brands';
+			}
+		}
+
+		&.prefix {
+		}
+
+		&.suffix {
+			&:before {
+				float: right;
+			}
+		}
+	}

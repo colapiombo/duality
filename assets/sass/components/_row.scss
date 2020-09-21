@@ -1,0 +1,35 @@
+/**
+* @author:	 							html5up.net | @ajlkn
+* 		Wonderfully changed:			Colapiombo
+* @copyright:							Copyright (c) Future Imperfect by HTML5 UP. (https://html5up.net/)
+* @copyright:							Copyright (c) 2020 Paolo Combi. (https://combi.li/)
+* Licensed under the CCA 3.0 license:	https://creativecommons.org/licenses/by/3.0/
+* Licensed under HTML5 UP:				https://html5up.net/license/
+*
+*/
+
+/* Row */
+
+	.row {
+		@include html-grid(1em);
+
+		@include breakpoint('<=xlarge') {
+			@include html-grid(1em, 'xlarge');
+		}
+
+		@include breakpoint('<=large') {
+			@include html-grid(1em, 'large');
+		}
+
+		@include breakpoint('<=medium') {
+			@include html-grid(1em, 'medium');
+		}
+
+		@include breakpoint('<=small') {
+			@include html-grid(1em, 'small');
+		}
+
+		@include breakpoint('<=xsmall') {
+			@include html-grid(1em, 'xsmall');
+		}
+	}

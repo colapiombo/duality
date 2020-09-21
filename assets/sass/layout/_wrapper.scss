@@ -1,0 +1,42 @@
+/**
+* @author:	 							html5up.net | @ajlkn
+* 		Wonderfully changed:			Colapiombo
+* @copyright:							Copyright (c) Future Imperfect by HTML5 UP. (https://html5up.net/)
+* @copyright:							Copyright (c) 2020 Paolo Combi. (https://combi.li/)
+* Licensed under the CCA 3.0 license:	https://creativecommons.org/licenses/by/3.0/
+* Licensed under HTML5 UP:				https://html5up.net/license/
+*
+*/
+
+/* Wrapper */
+
+	#wrapper {
+		@include vendor('display', 'flex');
+		@include vendor('flex-direction', 'row-reverse');
+		@include vendor('transition', 'opacity #{_duration(menu)} ease');
+		margin: 0 auto;
+		max-width: 100%;
+		opacity: 1;
+		padding: (_size(section-spacing));
+		width: 90em;
+
+		body.is-menu-visible & {
+			opacity: 0.15;
+		}
+
+		@include breakpoint('>=large'){
+			padding: _size(section-spacing-big);
+		}
+
+		@include breakpoint('<=large') {
+			display: block;
+		}
+
+		@include breakpoint('<=small') {
+			padding: _size(section-spacing-small);
+		}
+
+		body.single & {
+			display: block;
+		}
+	}
