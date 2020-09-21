@@ -1,4 +1,3 @@
-
 /**
  * palette.scss
  * version: 1.0
@@ -7,52 +6,117 @@
  * Copyright (c) 2020 Paolo Combi
  */
 
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #3f84e5ff, #f0e2e7ff, #b20d30ff, #c17817ff, #3f784cff, #000000ff, #839788ff, #000001ff, #90aa86ff);
+$gradient-right: linear-gradient(90deg, #3f84e5ff, #f0e2e7ff, #b20d30ff, #c17817ff, #3f784cff, #000000ff, #839788ff, #000001ff, #90aa86ff);
+$gradient-bottom: linear-gradient(180deg, #3f84e5ff, #f0e2e7ff, #b20d30ff, #c17817ff, #3f784cff, #000000ff, #839788ff, #000001ff, #90aa86ff);
+$gradient-left: linear-gradient(270deg, #3f84e5ff, #f0e2e7ff, #b20d30ff, #c17817ff, #3f784cff, #000000ff, #839788ff, #000001ff, #90aa86ff);
+$gradient-top-right: linear-gradient(45deg, #3f84e5ff, #f0e2e7ff, #b20d30ff, #c17817ff, #3f784cff, #000000ff, #839788ff, #000001ff, #90aa86ff);
+$gradient-bottom-right: linear-gradient(135deg, #3f84e5ff, #f0e2e7ff, #b20d30ff, #c17817ff, #3f784cff, #000000ff, #839788ff, #000001ff, #90aa86ff);
+$gradient-top-left: linear-gradient(225deg, #3f84e5ff, #f0e2e7ff, #b20d30ff, #c17817ff, #3f784cff, #000000ff, #839788ff, #000001ff, #90aa86ff);
+$gradient-bottom-left: linear-gradient(315deg, #3f84e5ff, #f0e2e7ff, #b20d30ff, #c17817ff, #3f784cff, #000000ff, #839788ff, #000001ff, #90aa86ff);
+$gradient-radial: radial-gradient(#3f84e5ff, #f0e2e7ff, #b20d30ff, #c17817ff, #3f784cff, #000000ff, #839788ff, #000001ff, #90aa86ff);
 
 
-$color-white: #ffffff;
-$color-gray: #f4f4f4;
-$color-gray-1: #aaaaaa;
-$color-gray-2: #646464;
-$color-gray-3: #3c3b3b;
 
-$color-gray-opacity: rgba(160,160,160,0.075);
-$color-gray-opacity-1: rgba(160,160,160,0.3);
-$color-gray-opacity-2: rgba(160,160,160,0.65);
+/* SCSS HEX */
+$azure: #3f84e5ff;
+$red-ncs: #b20d30ff;
+$snow: #f8f2f4ff;
+$ivory: #f5fdedff;
+$amazon: #3f784cff;
+$dark-sea-green: #90aa86ff;
+$black: #000000ff;
+$deep-saffron: #f9a03fff;
+$ochre: #c17817ff;
+$carrot-orange: #f18f01ff;
 
-$color-blue-green: #2ebaae;
+/* accent */
+$azure: #3f84e5;
+$azure-opacity-1: rgba(63, 132, 229, 0.075);
+$azure-opacity-2: rgba(63, 132, 229, 0.3);
+$azure-opacity-3: rgba(63, 132, 229, 0.65);
 
-$color-gray-light: rgba($color-white, 0.3);
-$color-gray-light-bg: rgba($color-white, 0.075);
-$color-gray-light-alt: rgba($color-white, 0.65);
+$red-ncs: #b20d30;
+$red-ncs-opacity-1: rgba(178, 13, 48, 0.075);
+$red-ncs-opacity-2: rgba(178, 13, 48, 0.3);
+$red-ncs-opacity-3: rgba(178, 13, 48, 0.65);
 
-$color-black: rgb(0,0,0);
-$color-gray-dark: rgba($color-black, 0.3);
-$color-gray-dark-bg: rgba($color-black, 0.075);
-$color-gray-dark-alt: rgba($color-black, 0.65);
+
+/* bg  */
+
+$ivory: #f5fded;
+$ivory-opacity-1: rgba(245, 253, 237, 0.075);
+$ivory-opacity-2: rgba(245, 253, 237, 0.3);
+$ivory-opacity-3: rgba(245, 253, 237, 0.65);
+
+$carrot-orange: #f18f01ff;
+$carrot-orange-opacity-1: rgba(241, 143, 1, 0.075);
+$carrot-orange-opacity-2: rgba(241, 143, 1, 0.3);
+$carrot-orange-opacity-3: rgba(241, 143, 1, 0.65);
+
+/* --bg-alt  */
+
+$snow: #f8f2f4;
+$snow-blush-opacity-1: rgba(248, 242, 244, 0.075);
+$snow-blush-opacity-2: rgba(248, 242, 244, 0.3);
+$lavender-blush-opacity-3: rgba(248, 242, 244, 0.65);
+
+$black: #000000;
+$black-opacity-1: rgba(0, 0, 0, 0.075);
+$black-opacity-2: rgba(0, 0, 0, 0.3);
+$black-opacity-3: rgba(0, 0, 0, 0.65);
+
+
+
+$amazon: #3f784c;
+$amazon-opacity-1: rgba(63, 120, 76, 0.075);
+$amazon-opacity-2: rgba(63, 120, 76, 0.3);
+$amazon-opacity-3: rgba(63, 120, 76, 0.65);
+
+
+$dark-sea-green: #90aa86;
+$dark-sea-green-opacity-1: rgba(144, 170, 134, 0.075);
+$dark-sea-green-opacity-2: rgba(144, 170, 134, 0.3);
+$dark-sea-green-opacity-3: rgba(144, 170, 134, 0.65);
+
+
+$ochre: #c17817;
+$ochre-opacity-1: rgba(193, 120, 23, 0.075);
+$ochre-opacity-2: rgba(193, 120, 23, 0.3);
+$ochre-opacity-3: rgba(193, 120, 23, 0.65);
+
+$deep-saffron: #f9a03fff;
+$deep-saffron-opacity-1: rgba(249, 160, 63, 0.075);
+$deep-saffron-opacity-2: rgba(249, 160, 63, 0.3);
+$deep-saffron-opacity-3: rgba(249, 160, 63, 0.65);
+
+
 
 
 :root {
-  --bg: #{$color-white};
-  --bg-alt: #{$color-gray};
-  --fg: #{$color-gray-3};
-  --fg-bold: #{$color-gray-2};
-  --fg-light: #{$color-gray-1};
-  --border: #{$color-gray-opacity-1};
-  --border-alt: #{$color-gray-opacity};
-  --border-bg: #{$color-gray-opacity-2};
-  --accent: #{$color-blue-green};
+  --bg: #{$ivory};
+  --bg-alt: #{$snow};
+  --fg: #{$dark-sea-green};
+  --fg-bold: #{$amazon};
+  --fg-light: #{$azure};
+  --border: #{$ochre-opacity-2};
+  --border-alt: #{$ochre-opacity-1};
+  --border-bg: #{$ochre-opacity-3};
+  --accent: #{$red-ncs};
 }
 
 .dark {
-  --bg: #{$color-black};
-  --bg-alt: #{$color-gray-dark};
-  --fg: #{$color-gray-light};
-  --fg-bold: #{$color-gray-light-bg};
-  --fg-light: #{$color-gray-light-alt};
-  --border: #{$color-gray-dark};
-  --border-alt: #{$color-gray-dark-bg};
-  --border-bg: #{$color-gray-dark-alt};
-  --accent: #{$color-black};
+  --bg: #{$ochre};
+  --bg-alt: #{$black};
+  --fg: #{$deep-saffron};
+  --fg-bold: #{$carrot-orange};
+  --fg-light: #{$red-ncs};
+
+  --border: #{$ivory-opacity-2};
+  --border-alt: #{$ivory-opacity-1};
+  --border-bg: #{$ivory-opacity-3};
+  --accent: #{$azure};
 
 }
 
@@ -68,3 +132,4 @@ $palette: (
         border-alt:					var(--border-alt),
         accent:						var(--accent)
 );
+
