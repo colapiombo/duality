@@ -19,3 +19,4 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 - @ajlkn
 
 ## Screenshot
+![screenshot-editorial](https://raw.githubusercontent.com/colapiombo/duality/master/screenshot.png)
