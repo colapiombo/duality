@@ -1,9 +1,9 @@
 # Duality theme for Bludit
-Theme for Bludit designed by Colapiombo.
+Theme for Bludit designed by Colapiombo.  
 
-Editorial designed by HTML5-UP team is a perfect theme for a website magazine.
- Suitable for online magazines, newspaper, publishing, personal blogs and any kind of sites.
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Editorial designed by HTML5-UP team is a perfect theme for a website magazine.  
+Suitable for online magazines, newspaper, publishing, personal blogs and any kind of sites.  
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)  
 
 
 ## Compatible
