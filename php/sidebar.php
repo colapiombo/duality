@@ -1,3 +1,15 @@
+<?php
+/**
+ * @author:	 							html5up.net | @ajlkn
+ * 		Wonderfully changed:			Colapiombo
+ * @copyright:							Copyright (c) Future Imperfect by HTML5 UP. (https://html5up.net/)
+ * @copyright:							Copyright (c) 2020 Paolo Combi. (https://combi.li/)
+ * Licensed under the CCA 3.0 license:	https://creativecommons.org/licenses/by/3.0/
+ * Licensed under HTML5 UP:				https://html5up.net/license/
+ *
+ */
+?>
+
 <!-- Sidebar -->
 <section id="sidebar">
 
@@ -5,8 +17,8 @@
     <section id="intro">
         <a href="#" class="logo"><img src="images/logo.jpg" alt=""/></a>
         <header>
-            <h2>Future Imperfect</h2>
-            <p>Another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+            <h2> <?= $site->title() ?></h2>
+            <p><?= $site->slogan() ?></p>
         </header>
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">

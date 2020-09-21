@@ -1,3 +1,15 @@
+<?php
+/**
+* @author:	 							html5up.net | @ajlkn
+* 		Wonderfully changed:			Colapiombo
+* @copyright:							Copyright (c) Future Imperfect by HTML5 UP. (https://html5up.net/)
+* @copyright:							Copyright (c) 2020 Paolo Combi. (https://combi.li/)
+* Licensed under the CCA 3.0 license:	https://creativecommons.org/licenses/by/3.0/
+* Licensed under HTML5 UP:				https://html5up.net/license/
+*
+*/
+?>
+
 <!-- Footer -->
 <section id="footer">
     <!-- Social Networks -->
